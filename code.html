@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Joel Gym &amp; Fitness Studio | The Elite Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #d4af37; }
+        html { scroll-behavior: smooth; }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 1) 100%);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#e5e2e1",
+              "on-error": "#690005",
+              "on-tertiary-fixed-variant": "#564500",
+              "on-primary-fixed": "#241a00",
+              "tertiary-container": "#cdb14f",
+              "primary": "#f2ca50",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary": "#c6c6c7",
+              "on-surface-variant": "#d0c5af",
+              "error": "#ffb4ab",
+              "tertiary-fixed-dim": "#e2c461",
+              "on-secondary-fixed": "#1a1c1c",
+              "inverse-surface": "#e5e2e1",
+              "on-surface": "#e5e2e1",
+              "inverse-primary": "#735c00",
+              "surface-variant": "#353534",
+              "primary-fixed": "#ffe088",
+              "surface": "#131313",
+              "outline": "#99907c",
+              "on-tertiary": "#3b2f00",
+              "secondary-fixed-dim": "#c6c6c7",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#ffe17c",
+              "error-container": "#93000a",
+              "on-secondary-fixed-variant": "#454747",
+              "outline-variant": "#4d4635",
+              "surface-container-high": "#2a2a2a",
+              "inverse-on-surface": "#313030",
+              "surface-tint": "#e9c349",
+              "on-secondary-container": "#b4b5b5",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#231b00",
+              "on-secondary": "#2f3131",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#544400",
+              "on-primary-container": "#554300",
+              "surface-container": "#201f1f",
+              "secondary-fixed": "#e2e2e2",
+              "tertiary": "#eacc68",
+              "primary-fixed-dim": "#e9c349",
+              "secondary-container": "#454747",
+              "background": "#131313",
+              "on-primary": "#3c2f00",
+              "on-primary-fixed-variant": "#574500",
+              "primary-container": "#d4af37",
+              "surface-container-low": "#1c1b1b",
+              "surface-bright": "#3a3939"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-secondary-container/40 backdrop-blur-md flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif italic text-[#D4AF37] tracking-tight">Joel Gym</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#f2ca50] border-b border-[#f2ca50]/50 pb-1 font-sans tracking-widest uppercase text-xs" href="#hero">Hero</a>
+<a class="text-on-surface/70 font-medium hover:text-on-surface transition-colors hover:scale-105 duration-300 font-sans tracking-widest uppercase text-xs" href="#vibe">Vibe</a>
+<a class="text-on-surface/70 font-medium hover:text-on-surface transition-colors hover:scale-105 duration-300 font-sans tracking-widest uppercase text-xs" href="#facilities">Facilities</a>
+<a class="text-on-surface/70 font-medium hover:text-on-surface transition-colors hover:scale-105 duration-300 font-sans tracking-widest uppercase text-xs" href="#guidance">Guidance</a>
+<a class="text-on-surface/70 font-medium hover:text-on-surface transition-colors hover:scale-105 duration-300 font-sans tracking-widest uppercase text-xs" href="#schedule">Schedule</a>
+<a class="text-on-surface/70 font-medium hover:text-on-surface transition-colors hover:scale-105 duration-300 font-sans tracking-widest uppercase text-xs" href="#pricing">Pricing</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-8 py-3 rounded-lg hover:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+            Join the Elite
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="cinematic wide shot of a dimly lit high-end gym with premium black machines, dramatic spot lighting, and polished concrete floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdBoHkOsFKjhXsDUDjvuKJTxnl8ptUEGIZMAsxKbODDBzBFLwH6Pbcumhuj8pK04p0et57XUnJg3OyqFEPTgQffIv2eKjXaPFSFH6RnB6QDqlBvi1aUX5dwIbQKyyLNa81PPnGIx5UBv8J95xKia6LyeZ5ZdIPeADsgRVRYE3iX2wE3-g7uTnzBMB8Xvcin-8TAmt26soaSiN5Yw-M6iqLLGJ-JjwxK7YroYtmXanupBuKh8u633KKiCT7VlCJaruVIEEVFvxRH9Vw"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<span class="label-md tracking-[0.3em] uppercase text-primary mb-6 block font-semibold">The Private Gallery of Fitness</span>
+<h1 class="font-headline text-5xl md:text-8xl font-bold text-on-surface leading-tight mb-8">
+                Joel Gym &amp; Fitness Studio – <span class="italic text-primary">Elevate Your Routine.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light tracking-wide">
+                An exclusive, focused space designed for those who demand the best from their workouts. No crowds. No distractions. Just pure focus.
+            </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="group relative px-10 py-4 bg-primary text-on-primary font-bold rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+<span class="relative z-10">Join the Elite</span>
+<div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-[-20deg]"></div>
+</button>
+<a class="text-on-surface font-semibold tracking-widest uppercase text-xs border-b border-primary/40 pb-1 hover:text-primary transition-colors" href="#vibe">Explore the Experience</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-primary text-3xl">expand_more</span>
+</div>
+</header>
+<!-- The Vibe Section -->
+<section class="py-24 bg-surface-container-low" id="vibe">
+<div class="max-w-[1400px] mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+<img class="rounded-lg shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" data-alt="moody high-contrast interior of a luxury fitness club with wood paneling and soft yellow accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d4nIdazptgS25MHQyMOzZXd6V_v7LIs4PEu4_hGMYMjeGm2goNqTj7aQJF9wtSpuGoboYcee8SDFx1FA77_KarldAFlF1XhX4HT9342lfEDS9_iyq8oSPRuH5LJKuUO6tDt2AW4L4QFlvRi-_0iO-PuE1yXVGnAeMJN0FPrdPs8wEJsG7cPe_3c6EugwVa27_rzmsPbSMSHm83KSY9EKXWbl-pZ0LI4lbsN3hIqB6ZvIgbX2-gG7RCZ-Kh1rKx_ilQOMA_0HRIak"/>
+<div class="absolute -bottom-6 -right-6 p-8 bg-surface-container-highest border-l-4 border-primary z-20">
+<span class="font-headline italic text-2xl text-primary">"The Silence of Progress"</span>
+</div>
+</div>
+<div class="space-y-8">
+<span class="text-primary font-sans tracking-[0.2em] uppercase text-xs font-extrabold">The Atmosphere</span>
+<h2 class="font-headline text-4xl md:text-6xl text-on-surface">Curated For <br/><span class="italic">Structured Splits</span></h2>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light">
+                        Step into an environment where your workout is the priority. Our studio is meticulously managed to ensure it is rarely overcrowded, providing you with the headspace and floor space required for peak performance.
+                    </p>
+<div class="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+<div>
+<h4 class="text-primary font-bold text-xl mb-2">Zero Wait</h4>
+<p class="text-xs text-on-surface/60 uppercase tracking-widest">Minimal members, maximum access to equipment.</p>
+</div>
+<div>
+<h4 class="text-primary font-bold text-xl mb-2">Focused Audio</h4>
+<p class="text-xs text-on-surface/60 uppercase tracking-widest">Ambient acoustic treatment for a calm, intense vibe.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Facilities -->
+<section class="py-32 bg-surface" id="facilities">
+<div class="max-w-[1400px] mx-auto px-12">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl text-on-surface mb-4">Elite Facilities</h2>
+<p class="text-on-surface-variant tracking-[0.1em] uppercase text-xs">The Anatomy of a Premium Studio</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Arsenal -->
+<div class="md:col-span-2 bg-surface-container-high rounded-lg p-10 flex flex-col justify-between group hover:bg-surface-bright transition-all duration-500 gold-glow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-3xl font-headline text-on-surface mb-4">The Arsenal</h3>
+<p class="text-on-surface-variant max-w-md">High-quality, meticulously maintained machines and free weights selected for optimal biomechanics.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">fitness_center</span>
+</div>
+<div class="flex gap-4 overflow-hidden mt-8 opacity-40 group-hover:opacity-100 transition-opacity">
+<img class="w-24 h-24 object-cover rounded-lg" data-alt="close up of heavy matte black dumbbells on a rack in a dark luxury gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPc8hvT3jz9XSZPQmdQPK464pOdnmHfHVb16Nvnm3V3UrxYh61XOR0kc5vB-ZN62B4tjuJqTMhm9Dl1r4OKMRE6gm17gudxGXBLSq6H8Bh-n9QGd6KAm_HswkkltBcLjpAuppvAfjmrzX-Izsn4Xn5n-xlqOW1Wc8hYRBKtAPVH5L5UeN8ira_cFdoiQbroiCF7k1TOkfmRBC8j_SFG2OV1hlcxrLBp00xq7B0uFXK8gh7b6mGcy2ZVd3oCq5tiGo5EkYeK81HyqLR"/>
+<img class="w-24 h-24 object-cover rounded-lg" data-alt="professional grade leg press machine in a dimly lit fitness studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-TmvuS_TWdRpB0e60w8phggXx9vC9xbOK-uUnPLkVLFUZu9YvlchyTljB31m6ypcLcQVzPH09L2R-OrvMMdv1BVd_nvfQhQtHvZv7UMlPhzJedb4BsfndF7L-gnWzxB6r6JGr953Hn7bIRDZYU7pCxpR5ByyYUly_eaAOjkHbjJ3dF6D4Cmm6Ndxh07jbCSWBvLdN9Ak3tqa-w0RTVgPmdhFylJ6tYagBXpmJqkobPuntqeN_MqBGDqFX38vCtqvUJOn6HfxVT2k7"/>
+</div>
+</div>
+<!-- Connectivity -->
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-lg p-10 flex flex-col items-center justify-center text-center group hover:scale-[1.02] transition-all duration-500 gold-glow">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">wifi</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-2">Connectivity</h3>
+<p class="text-on-surface-variant text-sm">High-speed Wi-Fi to keep your playlists synced and performance tracked.</p>
+</div>
+<!-- Comfort -->
+<div class="bg-surface-container-high rounded-lg p-10 flex flex-col justify-between group hover:bg-surface-bright transition-all duration-500 gold-glow">
+<span class="material-symbols-outlined text-primary text-4xl">clean_hands</span>
+<div>
+<h3 class="text-2xl font-headline text-on-surface mb-2">Comfort</h3>
+<p class="text-on-surface-variant text-sm">Immaculate, all-gender restrooms equipped with luxury amenities for your post-workout refresh.</p>
+</div>
+</div>
+<!-- Nutrition/Extras -->
+<div class="md:col-span-2 bg-surface-container-lowest border border-outline-variant/10 rounded-lg p-10 flex items-center gap-10 group hover:bg-surface-container-low transition-all duration-500 gold-glow overflow-hidden">
+<img class="w-48 h-full object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="aesthetic display of supplements and bottled water on a black stone counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdLltrWaZskqzEJl_sOOI8b43z-6MHPg2OEqCfQ8r5JGPuzRci6unZNCcEET3hCMkIRxylFEHmEaCzCHuvmFs946hNBuay5RovLMbAXJSCpWQ4GLxEMJZE-VRYF5ZaCNGLcI0ntK1usKdyGqMgohykL6dYQWEpsDlxPWIfp6wUmJrcTDVNK-zb4WvVEmYT0Am1lcG1a2-cJs9fNGMOgls2FFNLuUeO9AV-9sKBmOqlsO5xFFIfYvvZjlZFxOKyJq_AHlrGXfnJI4bc"/>
+<div>
+<h3 class="text-2xl font-headline text-on-surface mb-2">Recovery Zone</h3>
+<p class="text-on-surface-variant text-sm max-w-sm">Dedicated space for stretching and post-workout recovery with foam rollers and percussion massagers.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Expert Guidance -->
+<section class="py-32 bg-surface-container-low" id="guidance">
+<div class="max-w-[1400px] mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<span class="text-primary font-sans tracking-[0.2em] uppercase text-xs font-extrabold mb-4 block">Our Mentors</span>
+<h2 class="font-headline text-5xl text-on-surface">Architects of <br/><span class="italic text-primary">Human Performance</span></h2>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm">Highly trained, knowledgeable, and friendly professionals dedicated to your transformation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Trainer 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="dramatic black and white portrait of a muscular male fitness trainer looking intensely at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByTbg89KpAygwZC8G1yGnTIZVMQ3qcsMrRwnOTjimaIrth_tXIKP8W6-dRUYxpys4UMBi65IU17hu4CwrMu0eVamkU1_cPrPi0mA768pflrvolJ9FwR-jadAwKGuRUosjlPqU7pQEbwZSJCUgrUkrv8dTQ1rvXCh9NUGgbyjjyeiXcJ4HR_iHgEMJM4_dkm4AJdVUy_-aq7hlXSKQZ81mR8KA6w5UrusU2B7ZkOpWNSX7hfpAhZ6P603PnLSXoJOOrT3atZWktxGjc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform">
+<h4 class="text-2xl font-headline text-on-surface">Marcus Thorne</h4>
+<p class="text-primary text-xs uppercase tracking-widest mt-1">Lead Strength Specialist</p>
+</div>
+</div>
+<!-- Trainer 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="cinematic portrait of a female trainer in dark sportswear standing in a moody gym setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9WsiymuMVMRlRJoxYWxh541u-KY-Nm3GoJlogTa2HNYx-GuR4DMgt9fA73Nu5f25BKSpQCfo3uPxWLduuNrCUdCTK-msdd_JIJE7V9jJUPzsEN9vG6Oy9N4a5GZv01Wf0AMIi0eQQhghPzh36SfMV8_yvD6KfPRr-UNnfdrvw_me5LU2E34emp_WCadg50VWiJSFGhYp9kCUHEOVPOUOhN77UaSPH3DAcNmTjihuMCF5XqKVuYFOIhpbl52w6CmnLLVZobnJ2gEFf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform">
+<h4 class="text-2xl font-headline text-on-surface">Elena Vance</h4>
+<p class="text-primary text-xs uppercase tracking-widest mt-1">Mobility &amp; Longevity</p>
+</div>
+</div>
+<!-- Trainer 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="fitness professional posing in a high-end gym with dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtYw8MnTrii19OFSvEZ1KwY6MW4S2JkB8_CNjj3Uy_pnsneDce_28FvRr2Zr1MLZUACfI5xVoVcOhaj5fL-wmoz2CUo27SgK8_dFjWc6-U6YQpzVoWMiHDH2Bop2hqkq1r-0eOsMNwX7mpkrAtTm42T_dqKmfYsOW7NdnfQ0Xs3h96aeqQEqcJm-wlxglfrKBGltrzI7VDLsNAbFEzqjSBU9-AsQvNFNmkBAtPgSffXYjhk6-P3NWNNVl2bOdAeNDsOZxK3mNgXgSQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform">
+<h4 class="text-2xl font-headline text-on-surface">Julian Rossi</h4>
+<p class="text-primary text-xs uppercase tracking-widest mt-1">Hypertrophy Coach</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Schedule & Map Section -->
+<section class="relative py-32 overflow-hidden" id="schedule">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="moody exterior shot of a modern glass building at dusk with warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdSSTQTjZPpwGHZMyJ9-ogKCq6NI-XYBwnrKYm-PDgqLi2-syJCMohpqE42agS2CrBVYS3r8yYtRwNqflCMiRYWSGvfmdgPoYiAu1FoX-YqHCymcdm7VNcFAWdcTf50NcU1Vh3DAJ6eJ5nevA_03ceGkWylH3Av8VpaU1EQUc95AsrhHyyFH73p4skSRXUuJc3ZImYI8xB4Fw6UYtzy5ltVC9KoChzRhr6WVvf4PaJGfYbBU118OzSyYAQoHy-Uocmf49OaRsMKF5z"/>
+<div class="absolute inset-0 bg-surface/80"></div>
+</div>
+<div class="relative z-10 max-w-[1400px] mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="bg-secondary-container/30 backdrop-blur-xl p-12 rounded-lg border border-white/5">
+<h2 class="font-headline text-4xl text-on-surface mb-10">Access Hours</h2>
+<div class="space-y-6">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="text-on-surface/60 uppercase tracking-widest text-sm">Mon - Sat</span>
+<span class="text-primary font-bold text-lg">05:00 AM – 12:00 PM<br/><span class="text-right block">04:00 PM – 10:00 PM</span></span>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="text-on-surface/60 uppercase tracking-widest text-sm">Sun</span>
+<span class="text-primary font-bold text-lg">06:00 AM – 12:00 PM</span>
+</div>
+</div>
+<div class="mt-12">
+<h3 class="text-on-surface uppercase tracking-widest text-xs font-bold mb-4">Location</h3>
+<p class="text-on-surface-variant font-light">Plot 14, Main Road, Nehru Nagar, Pozhichalur, Chennai - 600074.</p>
+</div>
+</div>
+<div class="h-[400px] w-full rounded-lg overflow-hidden border border-outline-variant/20 grayscale hover:grayscale-0 transition-all duration-700">
+<!-- Placeholder for map - in real usage would be an iframe or dynamic map component -->
+<div class="w-full h-full bg-surface-container flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-primary text-5xl mb-4" data-weight="fill">location_on</span>
+<p class="text-on-surface tracking-widest uppercase text-xs">Pozhichalur Hub</p>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent pointer-events-none"></div>
+<!-- Using a styled static map representative image -->
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" data-alt="dark styled abstract map of an urban neighborhood with gold marker pin" data-location="Pozhichalur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnirg-12XiMvfnwpuvr5Royr7ZZWYisgRDVa_HP6McKIuafqC-BfVgV78y-Xo8FHQn06XTKrhfoyh2CAkjNPZhFxQo1LmxZRSpXkUdFFeYbbaofGpuc8EhN43gvIf8LZ0YCWGWr33KUzl-obZdipJd0hW7Ta28KcPgZtr9UB2v0vV_8rA5wmrHPQWvGsz0ebjiAARj0P0s0h6xnjeJP1KMvwNlWI9j0Yl6metjkfmAi7vRjqvXA-FeX-G6Pr2oJVsv_e64aSi6WNnR"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing / Footer CTA -->
+<section class="py-32 bg-surface text-center px-6" id="pricing">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-5xl md:text-7xl text-on-surface mb-8">Premium Value. <br/><span class="italic text-primary">Unmatched Access.</span></h2>
+<p class="text-on-surface-variant text-lg mb-12 font-light max-w-2xl mx-auto">
+                We believe elite fitness should be accessible. Our memberships are budget-friendly with premium positioning and flexible payment options designed to fit your lifestyle.
+            </p>
+<div class="inline-block p-[2px] rounded-lg bg-gradient-to-r from-primary/50 via-primary to-primary/50 animate-pulse mb-8">
+<a class="block px-12 py-6 bg-surface-container-lowest text-primary font-bold text-2xl md:text-3xl rounded-lg hover:bg-transparent hover:text-on-primary transition-all duration-300" href="tel:+919940221323">
+                    Call +91 99402 21323 to Enroll
+                </a>
+</div>
+<p class="text-on-surface/40 uppercase tracking-[0.2em] text-[10px]">Inquire today for exclusive seasonal rates</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-white/5 py-16 px-12 w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left max-w-[1400px] mx-auto">
+<div>
+<div class="text-lg font-serif text-[#D4AF37] mb-4">Joel Gym &amp; Fitness Studio</div>
+<p class="font-sans text-[10px] tracking-[0.15em] uppercase text-on-surface/50 leading-relaxed">
+                    © 2024 Joel Gym &amp; Fitness Studio. <br/>Plot 14, Pozhichalur.
+                </p>
+</div>
+<div class="flex justify-center gap-8">
+<a class="font-sans text-[10px] tracking-[0.15em] uppercase text-on-surface/50 hover:text-[#f2ca50] transition-colors" href="#">Instagram</a>
+<a class="font-sans text-[10px] tracking-[0.15em] uppercase text-on-surface/50 hover:text-[#f2ca50] transition-colors" href="#">YouTube</a>
+<a class="font-sans text-[10px] tracking-[0.15em] uppercase text-on-surface/50 hover:text-[#f2ca50] transition-colors" href="#">WhatsApp</a>
+</div>
+<div class="md:text-right">
+<span class="text-primary font-bold text-xs uppercase tracking-widest block mb-2">Member Support</span>
+<span class="text-on-surface/70 text-[10px] tracking-widest uppercase">Available Daily 5AM - 10PM</span>
+</div>
+</div>
+</footer>
+</body></html>
